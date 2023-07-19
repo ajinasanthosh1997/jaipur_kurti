@@ -1,0 +1,30 @@
+.owl-prev span,
+.owl-next span {
+  display: inline-block;
+  font-size: 24px;
+  transform: scale(1.2);
+}
+.owl-next {
+  background: white !important;
+  border-radius: 20px !important;
+}
+.owl-carousel .owl-stage-outer {
+  overflow: visible !important;
+}
+.owl-next:hover {
+  color: black !important;
+}
+.owl-item.active.center {
+  -webkit-transform: scale();
+  transform: scale(1.1);
+  transition: all .3s;
+  padding: 0rem 1rem;
+  z-index: 99;
+}
+.owl-prev {
+  background: white !important;
+  border-radius: 20px !important;
+}
+.owl-prev:hover {
+  color: black !important;
+}

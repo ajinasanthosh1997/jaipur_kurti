@@ -1,0 +1,624 @@
+
+@font-face{font-family:'dream-regular';src:url(https://cdn.shopify.com/s/files/1/0600/0672/7879/files/dream-regular.woff?v=1654153793);font-display:swap}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.icons span{
+  font-size: 35px;
+  margin: 0rem .5rem;
+}
+.icons{
+  align-items: center;
+}
+.icons span:nth-child(3){
+  margin-bottom: -.5rem;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+form {
+  color: #555;
+  display: flex;
+  padding: 2px;
+  max-width: fit-content;
+  border: 1px solid currentColor;
+  border-radius: 10px;
+  margin: 0 0 30px;
+}
+
+input[type="search"] {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+
+input[type="search"]::placeholder {
+  color: #bbb;
+  font-family: 'dream-regular',sans-serif;
+  font-size: .9em;
+}
+
+button[type="submit"] {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+button[type="submit"]:hover {
+  opacity: 1;
+}
+
+button[type="submit"]:focus,
+input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #1183d6;
+  border-color: #1183d6;
+  outline: none;
+}
+
+form.nosubmit {
+ border: none;
+ padding: 0;
+}
+
+input.nosubmit {
+  border: 1px solid #555;
+  width: 100%;
+  padding: 9px 4px 9px 40px;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+}
+.topnav {
+  background-color:white;
+  overflow: hidden;
+}
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+  float: center;
+  color: black;
+  text-align: center;
+  padding:9px 27px 9px 30px;
+  font-style: sans-serif;
+  font-family: 'Dosis';
+  font-size: 14px;
+}
+
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  list-style: none !important;
+  font-family: 'Dosis',sans-serif !important;
+  font-size:16px;
+  padding:9px 27px 9px 30px;                       
+  line-height: 22px;
+  margin:0;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  overflow-x: hidden;
+  text-decoration: none;
+  
+  
+
+}
+.flex ul a{
+  list-style: none;
+}
+
+.h{
+  text-align: center;
+  font-family: 'Dosis',sans-serif;
+  font-size:16px;
+  padding: 14px;
+  color: white;
+}
+.a{
+  color:red;
+}
+.b{
+  color: black;
+}
+.h1 {
+  text-align: center;
+  font-size: 30px !important;
+  line-height: 0px; 
+  font-weight: 500; 
+  padding-bottom: 17px;
+  font-family: 'dream-regular',sans-serif !important;
+  font-weight: 300;
+} 
+.h4 {
+  text-align: center;
+  font-size: 17px; 
+  line-height: 25px 
+  !important; 
+  font-weight: 300 
+  !important; 
+  color: #000 
+  !important; 
+  font-family: 'Dosis',sans-serif !important;
+  margin-bottom: 0 
+  !important;
+}
+
+
+.boxcontainer{
+  margin:auto;
+  margin-top: 20%;
+  position: relative;
+  width: 300px;
+  height:42px;
+  border:4px solid #2988b9;
+  padding:0px 0px;
+  border-radius:50px; 
+}
+.elementcontainer{
+  width:100%;
+  height:100%;
+  vertical-align:lef;
+  font-size: 2px;
+  font-family: 'Dosis',sans-serif;
+  font-size:px;
+}
+.search{
+  border:none;
+  height:100%;
+  width:100%;
+  padding:0px 5 px;
+  border-radius: 0px 50px;
+  font-size: 18px;
+  color:#424242;
+  font-weight:500;
+  background-color: pink;
+  
+
+}
+.boxcontainer input{
+  border-radius: 50%;
+  padding: 0 15px;
+}
+.search:focus
+{
+  outline:none;
+}
+.material-icons
+{
+  font-size:26;
+  color:#2980b9;
+}
+.owl-carousel.owl-loaded {
+  display: inline-block;
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+  border-color: white;
+  
+}
+
+.owl-prev,
+.owl-next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 40px;
+  color: black;
+  background-color: white; 
+  border-radius: 20px;
+
+}
+.owl-prev{
+  left: 2rem;
+  height: 40px;
+  width: 40px;
+
+}
+.owl-next{
+  right: 2rem;
+}
+.img-wrap {
+	/* background-size: cover; */
+  /* background-position: bottom; */
+	/* height: 300px; */
+  width: 300px;
+  gap: 3rem;
+  padding: 10px;
+  background-color: white;
+  
+
+    img {
+        visibility: hidden;
+    }
+}
+  
+  
+  
+  /* Change the color of links on hover */
+  /* .topnav a:hover {
+    background-color: #ddd;
+    color: white;
+  } */
+  
+  /* Add a color to the active/current link
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white; */
+  /* } */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+ 
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.header{
+  background-color: rgb(248, 243, 239);
+}
+.srch{
+  all: initial !important;
+  background: #F8F0D6;
+  border: 1px solid #e4deca;
+  border-radius: 200px;
+  padding: 6px 10px 4px 20px !important;
+  font-size: 10px;
+}
+.btn-src {
+  overflow: hidden;
+  width: 40px;
+  border: initial !important;
+  outline: initial;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  
+}
+.hdos{
+  font-family: 'dosis';
+  font-size: 28px;
+  text-align: center;
+}
+.hdr {
+  background: url(./images/Group_38.webp) !important;
+}
+.dosreg{
+  text-align: center;
+  font-family: 'dosis',sans-serif;
+  font-size: 16px;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba((0,0,0,0.2), green, blue, alpha);
+  max-width: 1500px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Dosis',sans-serif;
+  font-size: 10px;
+  gap: 2rem ;
+  padding-left: 50px;
+  padding-right: 50px;
+  
+}
+.card1{
+  box-shadow: 0 4px 8px 0 rgba((0,0,0,0.2), green, blue, alpha);
+  max-width: 800px;
+  max-height: 700px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Dosis',sans-serif;
+  font-size: 10px;
+  gap: 2rem ;
+  padding-left: 100px;
+  padding-right: 100px;
+  
+}
+.price{
+  color: black;
+  font-size: 22px;
+}
+.img span{
+  font-size: 35px;
+  margin: 0rem .5rem;
+}
+.img{
+  align-items: center;
+}
+.img span:nth-child(4){
+  margin-bottom: -.5rem;
+}
+
+.sec{
+  background-color: peachpuff;
+  border-radius: 50px;
+  padding: 20px;
+  height: 82px;
+}
+.sec1{
+  background-color: peachpuff;
+  border-radius: 50px;
+  padding: 20px;
+}
+.ftr {
+  background: url(./images/Group_38.webp) !important;
+}
+.box {
+  background-color: white;
+  margin: 5%;
+}
+.ftrlist{
+  font-size: 20px !important;
+  font-weight: 500; 
+  font-family: 'dream-regular',sans-serif !important;
+  letter-spacing: .8px;
+  text-align: left;
+  gap: 20rem;
+  
+}
+.ftrh1{
+  text-align: center;
+  font-size: 17px; 
+  line-height: 25px 
+  !important; 
+  font-weight: 300 
+  !important; 
+  font-family: 'Dosis',sans-serif !important;
+  color: grey;
+}
+.owl-prev span,
+.owl-next span {
+  display: inline-block;
+  font-size: 24px;
+  transform: scale(1.2);
+}
+.owl-next {
+  background: white !important;
+  border-radius: 20px !important;
+}
+.owl-carousel .owl-stage-outer {
+  overflow: visible !important;
+}
+.owl-next:hover {
+  color: black !important;
+}
+.owl-item.active.center {
+  -webkit-transform: scale();
+  transform: scale(1.1);
+  transition: all .3s;
+  padding: 0rem 1rem;
+  z-index: 99;
+}
+.owl-prev {
+  background: white !important;
+  border-radius: 20px !important;
+}
+.owl-prev:hover {
+  color: black !important;
+}
+i.fab {
+  font-size: 20px;
+  color: white;
+  margin-right: 10px;
+}
+.dot {
+  position: relative;
+  top: -31px;
+  right:-884px;
+  height: 43px;
+  width: 40px;
+  background-color: white;
+  border-radius: 20px;
+  border-style:solid;
+  border-width: 0px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nvbr {
+  overflow: hidden;
+  background-color: #FBF7EA;
+  
+}
+
+.nvbr a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+.sticky{
+  position: fixed;
+  top:0;
+  width: 100%;
+}
+.sticky+.content{
+  padding-top: 60px;
+}
+
+.drpdwn {
+  float: left;
+  overflow: hidden;
+}
+
+.drpdwn .drpbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.nvbr a:hover, .drpdwn:hover .drpbtn {
+  background-color:#FBF7EA;
+}
+
+.drpdwn-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding-left: 10px;
+  min-width: 300px;
+  /* box-shadow: 0px 8px 16px 0px white; */
+  z-index: 1;
+  
+}
+
+.drpdwn-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.drpdwn-content a:hover {
+  background-color: white;
+  color: #000;
+}
+
+.drpdwn:hover .drpdwn-content {
+  display: block;
+  
+}
+.cntnr{
+  display: flex;
+  align-items: center;
+}
+.plus-icon{
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right:10px ;
+}
+.hidden{
+  display: none;
+}
+. {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main{
+  width:500px;
+  height: 800px;
+  margin: auto;
+  margin-top: 100px;
+  box-shadow: 0px 0px 3px gray;
+  position: relative;
+  overflow: hidden;
+}
+.slide{
+  width: 100%;
+  height: 100%;
+  position: absolute;  
+  transition: 1s;
+
+}
+.nav1{
+  text-align: center;
+  margin: 15px;
+}
+.nav1 button{
+  font-size: 25px;
+  padding: 5px;
+}
