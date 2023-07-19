@@ -24,10 +24,9 @@ text-decoration: none;
 .vl {
     border-left: 1px solid gray;
     height:1055px;
-    position: absolute;
-    left: 56%;
-    margin-left: -3px;
-    top:235px;
+    padding-left: 0px;
+    margin-left: -100px;
+    margin-top: -331px;
 }
 .box img {
     width: 62px;
