@@ -505,6 +505,8 @@ body {
 
 .nvbr {
   overflow: hidden;
+  display: flex;
+  justify-content: center;
   background-color: #FBF7EA;
   
 }
@@ -592,11 +594,6 @@ body {
 }
 .hidden{
   display: none;
-}
-. {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
 }
 main{
   width:500px;
