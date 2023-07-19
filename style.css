@@ -488,6 +488,9 @@ i.fab {
   color: white;
   margin-right: 10px;
 }
+.nvbr button {
+  display: flex;
+}
 .dot {
   position: relative;
   top: -31px;
