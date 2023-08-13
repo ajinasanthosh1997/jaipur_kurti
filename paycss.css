@@ -320,4 +320,14 @@ text-decoration: none;
   }
 
 }
+@media only screen and (min-width: 768px){
+  .main {
+    justify-content: initial;
+    gap: 3rem;
+    position: relative;
+    right: 13px;
+    margin-right: -63px;
+    font-size: 12px;
+  }
+}
 
