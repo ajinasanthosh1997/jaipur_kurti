@@ -1,11 +1,14 @@
 
 @font-face{font-family:'dream-regular';src:url(https://cdn.shopify.com/s/files/1/0600/0672/7879/files/dream-regular.woff?v=1654153793);font-display:swap}
 .material-symbols-outlined {
+  display: inline-block;
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
   'opsz' 48
+ 
+  
 }
 .icons span{
   font-size: 35px;
@@ -15,7 +18,8 @@
   align-items: center;
 }
 .icons span:nth-child(3){
-  margin-bottom: -.5rem;
+  margin-bottom: 1.5rem;
+  padding-top: 10px;
 }
 
 body {
@@ -122,7 +126,6 @@ input.nosubmit {
   margin-right: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
-  overflow-x: hidden;
   text-decoration: none;
   
   
@@ -220,6 +223,14 @@ input.nosubmit {
   background-color: white;
   border-color: white;
   
+}
+.owl-carousel.owl-theme{
+  display: flex;
+  gap: 4rem;
+}
+.img-wrap img {
+  width: 100%; /* Make the images responsive within their container */
+  height: auto;
 }
 
 .owl-prev,
@@ -341,7 +352,7 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
-.header{
+.header{ 
   background-color: rgb(248, 243, 239);
 }
 .srch{
@@ -390,8 +401,6 @@ img {vertical-align: middle;}
 }
 .card1{
   box-shadow: 0 4px 8px 0 rgba((0,0,0,0.2), green, blue, alpha);
-  max-width: 800px;
-  max-height: 700px;
   margin: auto;
   text-align: center;
   font-family: 'Dosis',sans-serif;
@@ -411,6 +420,7 @@ img {vertical-align: middle;}
 }
 .img{
   align-items: center;
+
 }
 .img span:nth-child(4){
   margin-bottom: -.5rem;
@@ -429,6 +439,7 @@ img {vertical-align: middle;}
 }
 .ftr {
   background: url(./images/Group_38.webp) !important;
+  margin-top: -80px;
 }
 .box {
   background-color: white;
@@ -441,6 +452,7 @@ img {vertical-align: middle;}
   letter-spacing: .8px;
   text-align: left;
   gap: 20rem;
+  list-style: none;
   
 }
 .ftrh1{
@@ -511,15 +523,17 @@ body {
   display: flex;
   justify-content: center;
   background-color: #FBF7EA;
+  margin-top: -37px;
+  
   
 }
 
 .nvbr a {
   float: left;
-  font-size: 16px;
+  font-size: 13px;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 20px;
   text-decoration: none;
   display: block;
 }
@@ -538,11 +552,11 @@ body {
 }
 
 .drpdwn .drpbtn {
-  font-size: 16px;  
+  font-size: 13px;  
   border: none;
   outline: none;
   color: black;
-  padding: 14px 16px;
+  padding: 14px 10px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -557,7 +571,8 @@ body {
   position: absolute;
   background-color: white;
   padding-left: 10px;
-  min-width: 300px;
+  min-width: 200px;
+  
   /* box-shadow: 0px 8px 16px 0px white; */
   z-index: 1;
   
@@ -566,7 +581,7 @@ body {
 .drpdwn-content a {
   float: none;
   color: black;
-  padding: 12px 16px;
+  padding: 12px 45px;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -621,4 +636,339 @@ main{
 .nav1 button{
   font-size: 25px;
   padding: 5px;
+}
+.m{
+  display: block;
+}
+.m1{
+  display: none;
+}
+#src{
+  display: none;
+}
+
+.grid-container{
+  display: grid;
+  margin-left: -68px;
+  margin-right: -77px;
+  grid-template-columns: auto auto auto auto;
+  
+  padding: 10px;
+}
+.grid-item{
+ 
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.grid-container1{
+  display: grid;
+  margin-left: -7px;
+  margin-right: -77px;
+  grid-template-columns: auto auto;
+  
+  padding: 500px;
+  padding-top: 45px;
+}
+.img1{
+  height: 350px;
+  width: 350px;
+}
+#mydiv{
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+
+}
+#remove{
+
+}
+div.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 50px;
+  font-size: 20;
+  position: relative;
+}
+body{
+	margin:0;
+	font-family: sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.accordian{
+	
+	display: block;
+	margin:100px auto;
+}
+
+.accordian .card1{
+	
+	margin-bottom:20px;
+	float: left;
+	width: 122%;
+  margin-left: -55px;
+  
+}
+.accordian .card1 .card-header h3{
+	cursor: pointer;
+	position: relative;
+	margin:0;
+	padding:15px 20px;
+
+}
+.accordian .card1 .card-header {
+	position: relative;
+}
+.accordian .card1 .card-header span{
+	position: absolute;
+	right:20px;
+	top:12px;
+	height:25px;
+	width:0px;
+	border-radius:50%;
+	text-align: center;
+	line-height:25px;
+	font-size:13px;
+}
+
+.accordian .card1 .card-body{
+	padding:20px;
+  background-color: #FBF7EA;
+}
+.accordian .card1 .card-body{
+	display: none;
+}
+/*open one card by default*/
+.accordian .card1:nth-child(4) .card-body{
+ display: block;
+}
+.accordian .card1 .card-body p{
+	font-size: 15px;
+	line-height: 24px;
+	margin:-6px;
+}
+#ftr{
+  display: block;
+}
+#ftr1{
+  display: none;
+}
+.collapse{
+  font-family: 'dosis';padding-left: 260px;text-align: justify;padding-right: 300px;
+}
+.owl-carousel.owl-drag .owl-item{
+  background-color: white;
+}
+.owl-item.active.center{
+  transition: none;
+}
+
+.email{
+  width: 605px;height: 80px;padding-left: 15px;font-family: 'dosis',sans-serif;font-size: 20px;
+}
+.button{
+  background-color: rgb(157, 5, 5);width: 150px;height: 80px;color: white;padding-top: 6px;font-size: 20px;
+}
+.cl{
+  color: palevioletred;padding-left: 260px;font-size: 20px;
+}
+.cl1{
+  background-color: #FBF7EA;
+}
+@media only screen and (max-width: 768px) {
+  /* The existing responsive styles */
+  body{
+    overflow-x: hidden;
+  }
+  .cl1{
+    margin-left: -235px;
+    margin-right: -232px
+  }
+  .cl{
+    margin-left: -240px;
+    margin-right: -42px;
+  }
+  .button{
+    width: 100px;
+    height: 60px;
+  }
+  .email{
+    margin-left: -480px;
+    width: 230px;
+    height: 60px;
+  }
+  .grid-container1{
+    display: grid;
+    margin-left: -7px;
+    margin-right: -77px;
+    grid-template-columns: auto auto;
+    
+    padding: 500px;
+    padding-top: 45px;
+  }
+  .m{
+    display: none;
+  }
+  .m1{
+    display: block;
+  }
+  .center{
+    padding-left: 20px;
+    margin-top: -37px;
+    margin-left: -15px;
+    padding-top: 20px;
+  }
+  #per {
+    display: none;
+    
+  }
+  #src{
+    display: block;
+    margin-left: -22px;
+  }
+  .icons span:nth-child(3){
+    padding-top: -1px;
+  }
+ 
+  form{
+    display: none;
+  }
+  
+  .srch{
+    width:2px
+  }
+  .hamburger-icon {
+    display: block;
+    position: absolute;
+    top: 100px;
+    right: 345px;
+    cursor: pointer;
+    z-index: 999;
+    padding-top: 0px;
+   
+    
+  }
+
+  .hamburger-icon .line {
+    width: 20px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+  }
+  
+  
+  /* Hide the nav bar by default on smaller screens */
+  .nav {
+    display: none;
+    flex-direction: column;
+    text-align: left;
+    width: 330px;
+    height: 0px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #f5f5f5;
+    padding: 10px;
+  }
+  .nvbr{
+    flex-direction: column;
+    position: relative;
+    z-index: 99;
+    text-align: left;
+    background-color:  #f5f5f5;
+  }
+  .nvbr a{
+    text-align: left;
+    background-color: white;
+  }
+  
+  /* Show the nav bar when the "show" class is added */
+  .nav.show {
+    display: flex;
+  }
+
+  /* Style for the dropdown content */
+  .drpdwn-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    left: 1%;
+    background-color: #f5f5f5;
+    width: 200px; /* Adjust this width as needed */
+    padding: 10px;
+    height:600px;
+    width:100px;
+  }
+  .flex{
+    margin-top: -28px;
+    margin-right: -6px;
+    margin-bottom: -5px;
+  }
+
+  /* Show the dropdown content when the "show-dropdown" class is added */
+  .show-dropdown .drpdwn-content {
+    display: flex;
+  }
+  .owl-carousel{
+    padding-top: 100px;
+    width: 100%;
+  }
+  .owl-carousel .owl-item img {
+    
+    margin-left: -145px;
+    height: 400px;
+    
+    
+  }
+  .grid-item{
+    padding: 5px;
+  }
+  .grid-container{
+    grid-template-columns: auto auto;
+    margin-left: -54px;
+    margin-right: -49px;
+  }
+  .owl-carousel.owl-theme {
+    flex-wrap: wrap;
+     /* Allow carousel items to wrap to a new row */
+  }
+
+  .img-wrap {
+    width: 1000%;
+    /* Show 2 images per row on smaller screens */
+  }
+  .icons{
+    position: relative;
+    /* left: -23px;
+    top:-40px; */
+  }
+  .grid-container1{
+    
+    grid-template-columns: auto auto ;
+    
+    padding: 10px;
+  }
+  .img1{
+    height: 0px;
+    width: 0px;
+  }
+  #ftr{
+    display: none;
+  }
+  #ftr1{
+    display: block;
+  }
+  .ftrh1{
+    color: black;
+    font-size: 12px;
+    margin-left: -25px;
+    margin-right: -72px;
+  }
+  
 }
