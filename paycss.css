@@ -23,6 +23,7 @@ text-decoration: none;
 }
 .vl {
 
+
   border-left: 1px solid gray;
   height:1355px;
   padding-left: 0px;
@@ -300,7 +301,7 @@ text-decoration: none;
     justify-content: initial;
     gap: 3rem;
     position: relative;
-    right: 62px;
+    right: 13px;
     margin-right: -63px;
     font-size: 12px;
   }
@@ -313,7 +314,7 @@ text-decoration: none;
     justify-content: initial;
     gap: 3rem;
     position: relative;
-    right: 62px;
+    right: -114px;
     margin-right: -63px;
     font-size: 12px;
   }
