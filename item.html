@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="itemcss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -25,158 +27,164 @@
     <!-- Include js plugin -->
     <script src="assets/owl-carousel/owl.carousel.js"></script>                                                                                     
     <title>Document</title>
+
 </head>
 <body style="background-color:#FBF7EA;overflow-x: hidden;">
-  <header class="hdr">
-      
-        <div>
-          <p class="h" style="height: 50;"><strong>End of Season Sale-Up to 70% Off | FLAT 100 off on Order Above 999</strong>
-          </p>
+ <header class="hdr">
+      <div class="m">
+        <p class="h" style="height: 50;"><strong>End of Season Sale-Up to 70% Off | FLAT 100 off on Order Above 999</strong>
+        </p>
+      </div>
+      <div class="m1">
+        <marquee behavior="marquee" direction="left" class="h" style="height: 80px;width: 250px;margin-left:55px;"><strong>End of Season Sale-Up to 70% Off | FLAT 100 off on Order Above 999</strong></marquee>
+      </div>
+      <div class="flex justify-around" style="background-color: #FBF7EA;padding-top: 50px;">
+        <form >
+          <input class="srch" type="search" placeholder="What are you looking for?">
+          <button type="submit" class="btn-src"></button>
+        </form>
+        <a href="#"><img src="images/logo.webp" class="center" alt="">
+        </a>
+        <div class="icons flex" >
+          <span class="material-symbols-outlined" id="src">
+            search
+          </span>
+          <span class="material-symbols-outlined " id="per">
+          person
+          </span>
+          <span class="material-symbols-outlined"> 
+            shopping_bag
+          </span>
+          <span class="material-symbols-outlined">
+            local_shipping
+          </span>
         </div>
-  </header>
-  <div class="flex justify-around">
-    <form>
-      <input class="srch" type="search" placeholder="What are you looking for?">
-      <button type="submit" class="btn-src"></button>
-    </form>
-    <a href="#"><img src="images/logo.webp" class="center" alt="">
-    </a>
-    <div class="icons flex">
-      <span class="material-symbols-outlined">
-      person
-      </span>
-      <span class="material-symbols-outlined">
-        shopping_bag
-      </span>
-      <span class="material-symbols-outlined">
-        local_shipping
-      </span>
+      </div>
+      <div class="hamburger-icon"  onclick="toggleMenu(), toggleNextDivPosition(); addMediaQuery(),myfun1() " >
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav" id="navbar">
+        <div class="nvbr" style="font-family:'Dosis',sans-serif;">
+          <a href="#" style="text-decoration: none;font-size: 16px;">New Arrivals</a>
+          <a href="#" style="text-decoration: none;font-size: 16px;">Exclusive</a>
+          <a href="#" style="color: red;text-decoration: none;font-size: 16px;">SALE</a>
+          <div class="drpdwn">
+            <button class="drpbtn" style="font-size: 16px;">Kurtas & Kurtis 
+              <span class="material-symbols-outlined">
+                expand_more
+              </span>
+            </button>
+            <div class="drpdwn-content">
+              <a href="#" style="text-decoration: none;font-size: 16px;">A-Line Kurta</a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Straight Kurta</a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Anarkali Kurta</a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Anarkha Kurta</a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Kaftan Kurta</a>
+            </div>
+          </div>  
+          <div class="drpdwn">
+            <button class="drpbtn" style="font-size: 16px;">Ethnic Wear Sets 
+              <span class="material-symbols-outlined">
+                expand_more
+              </span>
+            </button>
+            <div class="drpdwn-content">
+              <a href="#" style="text-decoration: none;font-size: 16px;">Kurta Set</a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Suit Set</a>
+            </div>
+          </div> 
+          <div class="drpdwn">
+            <button class="drpbtn" style="font-size: 16px;">Bottom Wear
+              <span class="material-symbols-outlined">
+                expand_more
+              </span>
+            </button>
+            <div class="drpdwn-content">
+              <a href="#" style="text-decoration: none; font-size: 16px;">Palazzos</a>
+              <a href="#" style="text-decoration: none; font-size: 16px;">Skirts</a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Pants</a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Leggings</a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Patiala</a>
+            </div>
+          </div> 
+          <div class="drpdwn">
+            <button class="drpbtn" style="font-size: 16px;">Lounge Wear 
+              <span class="material-symbols-outlined">
+                expand_more
+              </span>
+            </button>
+            <div class="drpdwn-content">
+              <a href="#" style="text-decoration: none;font-size: 16px;">Tunic Bottom Set</a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Shirt Bottom Set</a>
+            </div>
+          </div> 
+          <div class="drpdwn">
+            <button class="drpbtn" style="font-size: 16px;">Fusion Wear 
+              <span class="material-symbols-outlined">
+                expand_more
+              </span>
+            </button>
+            <div class="drpdwn-content">
+              <a href="#" style="text-decoration: none;font-size: 16px;">Dresses</a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Jumpsuits</a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Tops & Tunics</a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Co ords Sets</a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Sets</a>
+            </div>
+          </div> 
+          <div class="drpdwn">
+            <button class="drpbtn" style="font-size: 16px;">Plus-size 
+              <span class="material-symbols-outlined">
+                expand_more
+              </span>
+            </button>
+            <div class="drpdwn-content">
+              <a href="#" style="text-decoration: none;font-size: 16px;">Kurtas & Kurtis</a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Ethnic Wear Sets</a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Lounge Wear </a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Fusion Wear </a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Bottom Wear</a>
+            </div>
+          </div> 
+          <div class="drpdwn">
+            <button class="drpbtn" style="font-size: 16px;">Collection 
+              <span class="material-symbols-outlined">
+                expand_more
+              </span>
+            </button>
+            <div class="drpdwn-content">
+              <a href="#" style="text-decoration: none;font-size: 16px;">A-Line Kurta</a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Straight Kurta</a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Anarkali Kurta</a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Anarkha Kurta</a>
+              <a href="#" style="text-decoration: none;font-size: 16px;">Kaftan Kurta</a>
+            </div>
+          </div> 
+          <a href="#" style="color: red;text-decoration: none;font-size: 16px;">Clearance SALE</a>
+        </div>
+      </nav>
+    </header>
+  <div style="display: flex;margin-right:140px;">
+    <div class="col-2">
+      <img src="images/kurthi3.webp" width="100%" id="ProductImg" class="main-img">
+      <div class="small-img-row">
+        <div class="small-img-col">
+            <img src="images/kurthi4.webp" width="100%" class="small-img">
+        </div>
+        <div class="small-img-col">
+            <img src="images/kurthi3.webp" width="100%" class="small-img">
+        </div>
+        <div class="small-img-col">
+            <img src="images/kurthi4.webp" width="100%" class="small-img">
+        </div>
+        <div class="small-img-col">
+            <img src="images/kurthi3.webp" width="100%" class="small-img">
+        </div>
+      </div>
     </div>
-  </div>
-  <nav style="padding-left: 70px;">
-    <div class="nvbr" style="font-family:'Dosis',sans-serif;">
-      <a href="#" style="text-decoration: none;">New Arrivals</a>
-      <a href="#" style="text-decoration: none;">Exclusive</a>
-      <a href="#" style="color: red;text-decoration: none;">SALE</a>
-      <div class="drpdwn">
-        <button class="drpbtn" style="">Kurtas & Kurtis 
-          <span class="material-symbols-outlined">
-            expand_more
-          </span>
-        </button>
-        <div class="drpdwn-content">
-          <a href="#" style="text-decoration: none;">A-Line Kurta</a>
-          <a href="#" style="text-decoration: none;">Straight Kurta</a>
-          <a href="#" style="text-decoration: none;">Anarkali Kurta</a>
-          <a href="#" style="text-decoration: none;">Anarkha Kurta</a>
-          <a href="#" style="text-decoration: none;">Kaftan Kurta</a>
-        </div>
-      </div> 
-      <div class="drpdwn">
-        <button class="drpbtn" style="">Ethnic Wear Sets 
-          <span class="material-symbols-outlined">
-            expand_more
-          </span>
-        </button>
-        <div class="drpdwn-content">
-          <a href="#" style="text-decoration: none;">Kurta Set</a>
-          <a href="#" style="text-decoration: none;">Suit Set</a>
-        </div>
-      </div> 
-      <div class="drpdwn">
-        <button class="drpbtn" style="">Bottom Wear
-          <span class="material-symbols-outlined">
-            expand_more
-          </span>
-        </button>
-        <div class="drpdwn-content">
-          <a href="#" style="text-decoration: none;">Palazzos</a>
-          <a href="#" style="text-decoration: none;">Skirts</a>
-          <a href="#" style="text-decoration: none;">Pants</a>
-          <a href="#" style="text-decoration: none;">Leggings</a>
-          <a href="#" style="text-decoration: none;">Patiala</a>
-        </div>
-      </div> 
-      <div class="drpdwn">
-        <button class="drpbtn" style="">Lounge Wear 
-          <span class="material-symbols-outlined">
-            expand_more
-          </span>
-        </button>
-        <div class="drpdwn-content">
-          <a href="#" style="text-decoration: none;">Tunic Bottom Set</a>
-          <a href="#" style="text-decoration: none;">Shirt Bottom Set</a>
-        </div>
-      </div> 
-      <div class="drpdwn">
-        <button class="drpbtn" style="">Fusion Wear 
-          <span class="material-symbols-outlined">
-            expand_more
-          </span>
-        </button>
-        <div class="drpdwn-content">
-          <a href="#" style="text-decoration: none;">Dresses</a>
-          <a href="#" style="text-decoration: none;">Jumpsuits</a>
-          <a href="#" style="text-decoration: none;">Tops & Tunics</a>
-          <a href="#" style="text-decoration: none;">Co ords Sets</a>
-          <a href="#" style="text-decoration: none;">Sets</a>
-        </div>
-      </div> 
-      <div class="drpdwn">
-        <button class="drpbtn" style="">Plus-size 
-          <span class="material-symbols-outlined">
-            expand_more
-          </span>
-        </button>
-        <div class="drpdwn-content">
-          <a href="#" style="text-decoration: none;">Kurtas & Kurtis</a>
-          <a href="#" style="text-decoration: none;">Ethnic Wear Sets</a>
-          <a href="#" style="text-decoration: none;">Lounge Wear </a>
-          <a href="#" style="text-decoration: none;">Fusion Wear </a>
-          <a href="#" style="text-decoration: none;">Bottom Wear</a>
-        </div>
-      </div> 
-      <div class="drpdwn">
-        <button class="drpbtn" style="">Collection 
-          <span class="material-symbols-outlined">
-            expand_more
-          </span>
-        </button>
-        <div class="drpdwn-content">
-          <a href="#" style="text-decoration: none;">A-Line Kurta</a>
-          <a href="#" style="text-decoration: none;">Straight Kurta</a>
-          <a href="#" style="text-decoration: none;">Anarkali Kurta</a>
-          <a href="#" style="text-decoration: none;">Anarkha Kurta</a>
-          <a href="#" style="text-decoration: none;">Kaftan Kurta</a>
-        </div>
-      </div> 
-      <a href="#" style="color: red;text-decoration: none;">Clearance SALE</a>
-    </div>
-  </nav>
-  <div style="display: flex;">
-    <main style="margin:200px">
-      <img src="images/anarkali kurta.webp" class="slide" alt="" style="height: 800px;width:500px">
-      <img src="images/co-ord sets.webp" class="slide" alt="" style="height: 800px;width:500px">
-      <img src="images/ethnic wear sets.webp" class="slide" alt="" style="height: 800px;width:500px">
-      <img src="images/anarkali kurta.webp" class="slide" alt="" style="height: 800px;width:500px">
-      <img src="images/anarkali kurta.webp" class="slide" alt="" style="height: 800px;width:500px">
-      <img src="images/co-ord sets.webp" class="slide" alt="" style="height: 800px;width:500px">
-      <img src="images/ethnic wear sets.webp" class="slide" alt="" style="height: 800px;width:500px">
-      <img src="images/anarkali kurta.webp" class="slide" alt="" style="height: 800px;width:500px">
-    </main>
-    <div class="nav1" style="margin:0px">
-      <button onclick="goPrev()" style="position: relative;top: -533px;left: -789px;">
-        <span class="material-symbols-outlined">
-          arrow_back_ios
-        </span>
-      </button> 
-      <button onclick="goNext()" style="position: relative;top: -533px;left: -308px;">
-        <span class="material-symbols-outlined" style="position: relative;right: 0px;left: 0px;">
-          arrow_forward_ios
-        </span>
-      </button>
-    </div>
-    <div style="padding-top: 200px;padding-left: 0px;">
+    <div style="padding-top: 45px;padding-left: 0px;">
       <h4 style="font-family: 'dosis',sans-serif;">SKU: 123ACOORRO63-Lavender-S</h4>
       <h1 style="font-family: 'dream-regular',sans-serif ;">Lavender Woven Asymmetric Hemline Printed<br>Kurta With Tulip Palazzo</h1>
       <div style="display: flex;">
@@ -188,15 +196,18 @@
         <h4 style="color: rgb(91, 91, 189);">Title:</h4>
       <h4 style="color: rgb(91, 91, 189);font-family: 'dosis',sans-serif;">S</h4>
       </div>
-      <div>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+      <div class="size-container" style="font-family: 'dosis',sans-serif;">
+        <div class="size">L</div>
+        <div class="size">M</div>
+        <div class="size">XL</div>
+        <div class="size">S</div>
       </div>
+    
       <div>
-        <div style="display:flex ;">
-          <h4><i class="fa-brands fa-whatsapp"></i><a href='#'  style="font-family: 'dosis',sans-serif;">Contact Us</a></h4>
+        <div style="display:flex ;font-family: 'dosis',sans-serif;">
+          <a href="https://api.whatsapp.com/send?phone=1234567890" class="whatsapp-icon" target="_blank" style="padding-top:9px;">
+            <i class="fab fa-whatsapp" style="color:black;"></i> Contact Us
+          </a>
           <span class="material-symbols-outlined" style="padding-left: 20px;padding-top: 5px;">
             checkroom
           </span>
@@ -205,128 +216,400 @@
         </div>
         
       </div>
-  
-    </div>
+      <div class="item-count" style="font-family: 'dosis',sans-serif;">
+        <button class="btn decrement">-</button>
+        <div class="count">1</div>
+        <button class="btn increment">+</button>
+        <button class="add-to-cart">
+          <span class="icon"><i class="fas fa-shopping-bag"></i></span>
+          Add to Cart
+        </button>
+      </div>
+      <div style="padding-top:15px;style="font-family: 'dosis',sans-serif;"">
+       <a href="#" class="buy-now" style="font-family: 'dosis',sans-serif;">Buy Now</a>
+      </div>
+      <div class="postal-code-container" style="padding-top:15px;">
+        <input type="text" class="postal-code-input" placeholder="Postal code e.g. 414001" style="font-family: 'dosis',sans-serif;">
+        <button class="check-button" style="font-family: 'dosis',sans-serif;">Check</button>
+      </div>
+      <div style="padding-top:15px;font-family: 'dosis',sans-serif;">
+        <a href="#" class="add-to-wishlist" style='text-decoration:none;'>
+          <span class="material-symbols-outlined">
+            favorite
+          </span>
+          ADD TO WISHLIST
+        </a>
+      </div>
+      <div style='color:red;'>
+        <h4 style="font-family: 'dosis',sans-serif;">Best Offers
+          <span class="material-symbols-outlined">
+            sell
+          </span>
+        </h4>
+      </div>
+      <div class="outer-rectangle">
+        <div class="inner-rectangle" style="font-family: 'dosis',sans-serif;padding-left:5px;"><strong style="color:#d3063e;">  ON YOUR FIRST PURCHASE</strong><br><br> Use <strong style="color:#d3063e;"> JKNEW10 </strong> "FLAT ₹100 off on min. order of ₹999"</h5></div>
+      </div>
+      <div class="additional-info" style="font-family: 'dosis',sans-serif;">
+        <div><strong>Product Type:</strong> Suit Set</div><br>
+        <div><strong>Tags:</strong> Suit Set, Summer</div>
+      </div>
+      <div class="product-details" style="font-family: 'dosis',sans-serif;">
+        <div class="section-title">DESCRIPTION</div>
+          <div class="item-description">
+            Pink cotton dobby straight kurta comes with a round neck, three-quarter sleeves, pintuck detail on the front yoke along with embroidered buttons, embroidery detail on the sleeves & back yoke with keyhole & button, side slits, and a straight hem.
+          </div>
 
+          <div class="item-description">
+            Pink solid cotton palazzos have a slip-on closure, partially elasticated waistband, embroidery detail on the side stitch line with pockets.
+          </div>
+
+          <div class="item-description">
+            Two-tone chanderi dupatta comes with a fringed border.
+          </div>
+
+          <div class="section-title">ADDITIONAL INFORMATION</div>
+          <div class="additional-info">
+            <div><strong>Package Include:</strong></div>
+            <div>1 Kurta, 1 Palazzo, 1 Dupatta</div>  
+            <div><strong>Work Type:</strong> </div>
+            <div>Self</div>
+            <div><strong>Occasion:</strong></div>
+            <div>Casual</div>
+            <div><strong>Top Fabric:</strong></div>
+            <div> Cotton</div>
+            <div><strong>Bottom Fabric:</strong></div>
+            <div>Pure Cotton</div>
+            <div><strong>Dupatta Fabric:</strong></div>
+            <div>Chanderi Silk</div>
+            <div><strong>Sleeve Length:</strong></div>
+            <div>Three-Quarter Sleeves</div>
+            <div><strong>Neck:</strong></div>
+            <div>Round Neck</div>
+            <div><strong>Color:</strong></div>
+            <div>Pink</div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  <div class="related-products" style="padding-left:50px;background-color:#FBF7EA;">
+    <div><button class="prev-button"><span class="arrow-left">&lt;</span></button></div>
+    <div style="display:flex;font-family: 'dream-regular',sans-serif ;font-size:16px !important;"><h2>Related Products</h2></div>
+    <div><button class="next-button" style="display:flex;position: relative;top: -92px; right: -1351px;"><span class="arrow-right">&gt;</span></button></div>
+    <div class="carousel-container">
+      <div class="owl-carousel">
+        <div class="item">
+            <span class="img">
+                <img src="images/11.webp" alt="" style='width:100%'>
+                <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
+                <p class="price" style="font-size: 16px;">₹ 1990</p>
+            </span>
+        </div>
+        <div class="item">
+            <span class="img">
+                <img src="images/22.webp" alt="" style='width:100%'>
+                <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
+                <p class="price" style="font-size: 16px;">₹ 1990</p>
+            </span>
+        </div>
+        <div class="item">
+            <span class="img">
+                <img src="images/33.webp" alt="" style='width:100%'>
+                <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
+                <p class="price" style="font-size: 16px;">₹ 1990</p>
+            </span>
+        </div>
+        <div class="item">
+            <span class="img">
+                <img src="images/44.webp" alt="" style='width:100%'>
+                <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
+                <p class="price" style="font-size: 16px;">₹ 1990</p>
+            </span>
+        </div>
+        <div class="item">
+                <span class="img">
+                    <img src="images/11.webp" alt="" style='width:100%'>
+                    <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
+                    <p class="price" style="font-size: 16px;">₹ 1990</p>
+                </span>
+        </div>
+        <div class="item">
+            <span class="img">
+                <img src="images/22.webp" alt="" style='width:100%'>
+                <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
+                <p class="price" style="font-size: 16px;">₹ 1990</p>
+            </span>
+        </div>
+        <div class="item">
+            <span class="img">
+                <img src="images/33.webp" alt="" style='width:100%'>
+                <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
+                <p class="price" style="font-size: 16px;">₹ 1990</p>
+            </span>
+        </div>
+        <div class="item">
+            <span class="img">
+                <img src="images/44.webp" alt="" style='width:100%'>
+                <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
+                <p class="price" style="font-size: 16px;">₹ 1990</p>
+            </span>
+        </div>
+      </div>
+    </div>
   </div>
   <div>
-    <h1 class="h1"><strong style="font-weight: 300;position:relative;left: -590px;">RELATED PRODUCTS</strong></h1>
-    <div class="card flex">
-      <span class="img">
-        <img src="images/11.webp" alt="" style='width:100%'>
-        <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
-        <p class="price" style="font-size: 16px;">₹ 1990</p>
-      </span>
-      <span class="img">
-        <img src="images/22.webp" alt="" style='width:100%'>
-        <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
-        <p class="price" style="font-size: 16px;">₹ 1990</p>
-      </span>
-      <span class="img">
-        <img src="images/33.webp" alt="" style='width:100%'>
-        <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
-        <p class="price" style="font-size: 16px;">₹ 1990</p>
-      </span>
-      <span class="img">
-        <img src="images/44.webp" alt="" style='width:100%'>
-        <h1><strong style="font-size: 16px;">White & Blue Striped...</strong></h1>
-        <p class="price" style="font-size: 16px;">₹ 1990</p>
-      </span>
-    </div>Add to cart</button>
-
+    <h1 style="font-family: 'dream-regular',sans-serif ;font-size:16px;padding-left:156px;">Frequently Bought Together</h1>
   </div>
-  
-  
-  <footer class="ftr" style="background-color: #FBF7EA;padding-right: 0px;">
-    <div>
-      <h1 class="h1"><strong style="font-weight: 300;color: white;"><br>Join our community</strong></h1>
-      <p class="h4"><strong style="color: white;">Get exclusive access to our latest offers, new launches, style tips and much more.</strong> </p>
-    </div>
-    <div style="padding-left: 500px;padding-right: 50px;padding-top: 50px;">
-      <input type="email" placeholder="Enter your email address" style="width: 605px;height: 80px;padding-left: 15px;font-family: 'dosis',sans-serif;">
-      <button type="button" style="background-color: rgb(157, 5, 5);width: 105px;height: 80px;color: white;    ">SUBMIT</button>
-    </div>
-    <div class="box flex" style="text-align: center;justify-content: center;gap:227px;height: 399px;width:1628px;font-size: 20px;background-color:#FBF7EA; ">
-      <span>
-        <h1 class="ftrlist"><br>INFORMATION</h1>
-        <div style="font-family: 'dosis',sans-serif;text-align: left;line-height:2em ;font-weight:bold;" >              
-            <li>MY ACCOUNT</li>
-            <li>PRIVACY POLICY</li>
-            <li>SHIPPING POLICY</li>
-            <li>RETURN/EXCHANGE POLICY</li>
-            <li>RETURN/EXCHANGE REQUEST</li>   
-            <li>TRACK YOUR ORDER</li>
-            <li>TERMS & CONDITIONS</li>
-        </div>
-      </span>
-      <span>
-        <h1 class="ftrlist"><br>DISCOVER</h1>
-        <div style="font-family: 'dosis',sans-serif;text-align: left;line-height:2em ;font-weight:bold;" >
-            <li>BLOG</li>
-            <li>ABOUT US</li>
-            <li>MEET THE FOUNDER</li>
-            <li>CONTACT US</li>
-            <li>STORE LOCATOR</li>
-            <li>FRANCHISE ENQUIRY</li>
-            <li>TRADE ENQUIRY</li>
-        </div>
-      </span>
-      <span>
-        <h1 class="ftrlist"><br>QUICK LINKS</h1>
-        <div style="font-family: 'dosis',sans-serif;text-align: left;line-height:2em ;font-weight:bold;" >
-            <li>STRAIGHT KURTA</li>
-            <li>ANARKALI KURTA</li>
-            <li>KURTA SET</li>
-            <li>PALAZZOS</li>
-            <li>SKIRTS</li>
-            <li>DRESSES</li>
-        </div><br>
-      </span>
-      <span>
-        <h1 class="ftrlist" style="padding-right: 10px;"><br>FOLLOW US</h1>
-        <div style="font-family: 'dosis',sans-serif;text-align:left;line-height:2em ;font-weight:bold;" >
-            <span>
-              <a href="https://www.instagram.com"><i class="fab fa-instagram" style="color: black;"></i></a>
-              <a href="https://www.facebook.com"><i class="fab fa-facebook" style="color: black;"></i></a>
-              <a href="https://www.pinterest.com"><i class="fab fa-pinterest" style="color: black;"></i></a>
-              <a href="https://www.youtube.com"><i class="fab fa-youtube" style="color: black;"></i></a>
+  <div>
+    <h1 style="font-family: 'dosis',sans-serif;font-size:16px;padding-left:156px;text-align:center;"><strong>Save money buying these products together</strong></h1>
+   
+  </div>
+  <div style="text-align:center;margin: 2px 31px 0px 166px;">
+    <img src="images/fr1.webp" style="height:200px;width:150px;">
+    +
+    <img src="images/fr2.webp" style="height:200px;width:150px;">
+    +
+    <img src="images/fr3.webp" style="height:200px;width:150px;">
+  </div>
+  <div style="font-family: 'dosis',sans-serif;text-align:center;padding-left:72px;">
+    <h5>Total price: ₹ 2,847  <s style="color:gray;"> ₹ 8,497</s></h5>
+  </div>
+  <div style="text-align:center;padding-left:72px;">
+   <button class="check-button" style="font-family: 'dosis',sans-serif;">ADD SELECTED TO CART</button>
+  </div>
+  <div style="text-align:center;">
+    <input type="checkbox" ><strong style="font-family: 'dosis',sans-serif;">This item: Pink Solid Straight Cotton Blend Kurta Palazzo With Dupatta Set  </strong><select style="border-radius:10px;font-family: 'dosis',sans-serif;"><option>S</option><option>XL</option><option>2XL</option></select>
+  &nbsp;&nbsp;&nbsp;&nbsp;₹ 899&nbsp;&nbsp;&nbsp;&nbsp;<s style="color:gray;font-family: 'dosis',sans-serif;">₹ 2,949</s><br>
+    <input type="checkbox" ><strong style="font-family: 'dream-regular',sans-serif ;">Magenta Embroidered Straight Kurta With Pants </strong><select style="border-radius:10px;"><option>S</option><option>XL</option><option>2XL</option></select>
+  &nbsp;&nbsp;&nbsp;&nbsp;₹ 899&nbsp;&nbsp;&nbsp;&nbsp;<s style="color:gray;">₹ 2,949</s><br>
+    <input type="checkbox"><strong style="font-family: 'dream-regular',sans-serif ;">Pink & Grey Dobby Weave Straight Kurta With Palazzos & Dupatta  </strong><select style="border-radius:10px;"><option>S</option><option>XL</option><option>2XL</option></select>
+  &nbsp;&nbsp;&nbsp;&nbsp;₹ 899&nbsp;&nbsp;&nbsp;&nbsp;<s style="color:gray;">₹ 2,949</s>
+  </div>
+  <footer class="ftr" style="background-color: #FBF7EA;padding-right: 0px;" id="ftr">
+      <div>
+        <h1 class="h1"><strong style="font-weight: 300;color: white;"><br>Join our community</strong></h1>
+        <p class="h4"><strong style="color: white;">Get exclusive access to our latest offers, new launches, style tips and much more.</strong> </p>
+      </div>
+      <div style="padding-left: 365px;padding-right: 50px;padding-top: 50px;">
+        <input type="email" placeholder="Enter your email address" style="width: 605px;height: 55px;padding-left: 15px;font-family: 'dosis',sans-serif;font-size: 20px;">
+        <button type="button" style="background-color: rgb(157, 5, 5);width: 150px;height: 58px;color: white;padding-top: 6px;font-size: 20px;">SUBMIT</button>
+      </div>
+      <div class="box flex" style="text-align: center;justify-content: center;gap: 204px;height: 325px;font-size: 14px;background-color: #FBF7EA; ">
+        <span>
+          <h1 class="ftrlist"><br>INFORMATION</h1>
+          <div style="font-family: 'dosis',sans-serif;text-align: left;line-height:2em ;font-weight:bold;" >              
+              <li>MY ACCOUNT</li>
+              <li>PRIVACY POLICY</li>
+              <li>SHIPPING POLICY</li>
+              <li>RETURN/EXCHANGE POLICY</li>
+              <li>RETURN/EXCHANGE REQUEST</li>   
+              <li>TRACK YOUR ORDER</li>
+              <li>TERMS & CONDITIONS</li>
+          </div>
+        </span>
+        <span>
+          <h1 class="ftrlist"><br>DISCOVER</h1>
+          <div style="font-family: 'dosis',sans-serif;text-align: left;line-height:2em ;font-weight:bold;" >
+              <li>BLOG</li>
+              <li>ABOUT US</li>
+              <li>MEET THE FOUNDER</li>
+              <li>CONTACT US</li>
+              <li>STORE LOCATOR</li>
+              <li>FRANCHISE ENQUIRY</li>
+              <li>TRADE ENQUIRY</li>
+          </div>
+        </span>
+        <span>
+          <h1 class="ftrlist"><br>QUICK LINKS</h1>
+          <div style="font-family: 'dosis',sans-serif;text-align: left;line-height:2em ;font-weight:bold;" >
+              <li>STRAIGHT KURTA</li>
+              <li>ANARKALI KURTA</li>
+              <li>KURTA SET</li>
+              <li>PALAZZOS</li>
+              <li>SKIRTS</li>
+              <li>DRESSES</li>
+          </div><br>
+        </span>
+        <span>
+          <h1 class="ftrlist" style="padding-right: 10px;"><br>FOLLOW US</h1>
+          <div style="font-family: 'dosis',sans-serif;text-align:left;line-height:2em ;font-weight:bold;" >
+              <span>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram" style="color: black;"></i></a>
+                <a href="https://www.facebook.com"><i class="fab fa-facebook" style="color: black;"></i></a>
+                <a href="https://www.pinterest.com"><i class="fab fa-pinterest" style="color: black;"></i></a>
+                <a href="https://www.youtube.com"><i class="fab fa-youtube" style="color: black;"></i></a>
 
-            </span>
-            <li class="ftrlist">Customer Service</li>
-            <li>CARE@JAIPURKURTI.COM</li>
-            <li>RETURN/EXCHANGE POLICY</li>
-            <li>(+91) 9314966969</li>
-            <li>(+91) 8078678116</li>
-            <li style="color: red;font-size: 22px;">FRANCHISE ENQUIRY</li>
+              </span>
+              <li class="ftrlist">Customer Service</li>
+              <li>CARE@JAIPURKURTI.COM</li>
+              <li>RETURN/EXCHANGE POLICY</li>
+              <li>(+91) 9314966969</li>
+              <li>(+91) 8078678116</li>
+              <li style="color: red;font-size: 22px;">FRANCHISE ENQUIRY</li>
+          </div>
+        </span>
+      </div>
+      <div>
+        <h1 class="ftrh1">
+          <strong>COPYRIGHT © 2023 JAIPURKURTI.COM. ALL RIGHTS RESERVED.</strong>
+        </h1>
+        <br>
+      </div>
+    </footer>
+    <footer class="ftr" style="background-color: #FBF7EA;padding-right: 0px;" id="ftr1">
+      <div>
+        <h1 class="h1"><strong style="font-weight: 300;color: white;"><br>Join our community</strong></h1>
+        <p class="h4"><strong style="color: white;">Get exclusive access to our latest offers, new launches, style tips and much more.</strong> </p>
+      </div>
+      <div style="padding-left: 500px;padding-right: 50px;padding-top: 50px;">
+        <input type="email" placeholder="Enter your email address" class="email">
+        <button type="button" class="button">SUBMIT</button>
+      </div>
+      <br><br>
+      <div class="accordian">
+        <div class="card1 ftrlist">
+            <div class="card-header">
+               <h3>INFORMATION</h3>
+               <span class="fa fa-plus"></span>
+            </div>
+            <div class="card-body">
+              <div style="font-family: 'dosis',sans-serif;text-align: left;line-height:2em ;font-weight:bold;" >              
+                <li>MY ACCOUNT</li>
+                <li>PRIVACY POLICY</li>
+                <li>SHIPPING POLICY</li>
+                <li>RETURN/EXCHANGE POLICY</li>
+                <li>RETURN/EXCHANGE REQUEST</li>   
+                <li>TRACK YOUR ORDER</li>
+                <li>TERMS & CONDITIONS</li>
+              </div>
+            </div>
         </div>
-      </span>
-    </div>
-    <div style="padding-top: 0px;">
-      <h1 class="ftrh1">
-        <strong>COPYRIGHT © 2023 JAIPURKURTI.COM. ALL RIGHTS RESERVED.</strong>
-      </h1>
-      <br>
-    </div>
+        <div class="card1 ftrlist">
+            <div class="card-header">
+               <h3>DISCOVER</h3>
+               <span class="fa fa-plus"></span>
+            </div>
+            <div class="card-body">
+              <div style="font-family: 'dosis',sans-serif;text-align: left;line-height:2em ;font-weight:bold;" >
+                <li>BLOG</li>
+                <li>ABOUT US</li>
+                <li>MEET THE FOUNDER</li>
+                <li>CONTACT US</li>
+                <li>STORE LOCATOR</li>
+                <li>FRANCHISE ENQUIRY</li>
+                <li>TRADE ENQUIRY</li>
+              </div>
+            </div>
+        </div>
+        <div class="card1 ftrlist">
+          <div class="card-header">
+             <h3>QUICK LINKS</h3>
+             <span class="fa fa-plus"></span>
+          </div>
+          <div class="card-body">
+            <div style="font-family: 'dosis',sans-serif;text-align: left;line-height:2em ;font-weight:bold;" >
+              <li>STRAIGHT KURTA</li>
+              <li>ANARKALI KURTA</li>
+              <li>KURTA SET</li>
+              <li>PALAZZOS</li>
+              <li>SKIRTS</li>
+              <li>DRESSES</li>
+            </div>
+          </div>
+      </div>
+        <div class="card1 ftrlist">
+          <div class="card-header">
+              <h3>FOLLOW US</h3>
+              <span class="fa fa-minus"></span>
+          </div>
+          <div class="card-body active">
+            <div style="font-family: 'dosis',sans-serif;text-align:left;line-height:2em ;font-weight:bold;" >
+              <span>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram" style="color: black;"></i></a>
+                <a href="https://www.facebook.com"><i class="fab fa-facebook" style="color: black;"></i></a>
+                <a href="https://www.pinterest.com"><i class="fab fa-pinterest" style="color: black;"></i></a>
+                <a href="https://www.youtube.com"><i class="fab fa-youtube" style="color: black;"></i></a>
 
-  </footer>
+              </span>
+              <li class="ftrlist">Customer Service</li>
+              <li>CARE@JAIPURKURTI.COM</li>
+              <li>RETURN/EXCHANGE POLICY</li>
+              <li>(+91) 9314966969</li>
+              <li>(+91) 8078678116</li>
+              <li style="color: red;font-size: 22px;">FRANCHISE ENQUIRY</li>
+          </div>
+          </div>
+          <h1 class="ftrh1">
+            <strong>COPYRIGHT © 2023 JAIPURKURTI.COM. ALL RIGHTS RESERVED.</strong>
+          </h1>
+        </div>
+  
+      </div>
+    </footer>
   <script>
-    $(document).ready(function() {
-      var owl = $(".owl-carousel").owlCarousel({
-        loop: true,
-        nav: false,
-        dots: false,
-        items: 1
-      });
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
 
-      // Custom navigation buttons
-      $(".prev-btn").click(function() {
-        owl.trigger("prev.owl.carousel");
-      });
-
-      $(".next-btn").click(function() {
-        owl.trigger("next.owl.carousel");
-      });
+    SmallImg[0].onclick = function () {
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function () {
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function () {
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function () {
+        ProductImg.src = SmallImg[3].src;
+    }
+  </script>
+  <script>  
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
     });
+    
+    $(".prev-button").click(function() {
+      $(".owl-carousel").trigger("prev.owl.carousel");
+    });
+
+    $(".next-button").click(function() {
+      $(".owl-carousel").trigger("next.owl.carousel");
+    });
+  });
+  <script>
+  $(document).ready(function(){
+    $(".card-header").click(function(){
+        // self clicking close
+        if($(this).next(".card-body").hasClass("active")){
+          $(this).next(".card-body").removeClass("active").slideUp()
+        $(this).children("span").removeClass("fa-minus").addClass("fa-plus")	
+        }
+      else{
+      $(".card .card-body").removeClass("active").slideUp()
+      $(".card .card-header span").removeClass("fa-minus").addClass("fa-plus");
+        $(this).next(".card-body").addClass("active").slideDown()
+        $(this).children("span").removeClass("fa-plus").addClass("fa-minus")
+      }
+    })
+    })
+  </script>
+
   </script>
   <script src="script.js" async defer></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

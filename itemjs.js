@@ -46,3 +46,22 @@ const slideImage = () =>{
     }
   )
 }
+
+
+const countElement = document.querySelector('.count');
+const decrementButton = document.querySelector('.decrement');
+const incrementButton = document.querySelector('.increment');
+
+let itemCount = 1;
+
+decrementButton.addEventListener('click', () => {
+  if (itemCount > 1) {
+    itemCount--;
+    countElement.textContent = itemCount;
+  }
+});
+
+incrementButton.addEventListener('click', () => {
+  itemCount++;
+  countElement.textContent = itemCount;
+});
